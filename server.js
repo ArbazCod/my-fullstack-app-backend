@@ -13,8 +13,11 @@ const app = express();
 // ---------- MIDDLEWARES ----------
 app.use(
   cors({
-    origin: "http://localhost:3000", // allow frontend origin
-    credentials: true,               // allow cookies
+    origin: [
+      "http://localhost:3000",
+      "https://my-fullstack-app-frontend-7uwt.vercel.app",
+    ],
+    credentials: true,
   })
 );
 
