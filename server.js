@@ -16,6 +16,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "https://my-fullstack-app-frontend-7uwt.vercel.app",
+      "https://my-fullstack-app-frontend.vercel.app",
     ],
     credentials: true,
   })
